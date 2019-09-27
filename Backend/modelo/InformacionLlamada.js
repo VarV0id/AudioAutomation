@@ -1,14 +1,14 @@
 class InformacionLlamada {
     constructor(id) {
-        this.id = id;
+        this.idTranscripcion = id;
         this.transcripcion = null;
         this.audio = null;
     }
-    setId(id){
-        this.id = id;
+    setIdTranscripcion(id){
+        this.id = idTranscripcion;
     }
-    getId(){
-        return this.id;
+    getIdTranscripcion(){
+        return this.idTranscripcion;
     }
     setTranscripcion(transcripcion){
         this.transcripcion = transcripcion;
