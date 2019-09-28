@@ -2,22 +2,105 @@
   "Packages": [
     {
       "Package": {
+        "Id": "ActivitiesDataTable",
+        "Version": "1.0.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\jairo\\.nuget\\packages\\activitiesdatatable/1.0.0\\lib/DataTableActivities.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\newtonsoft.json/12.0.3-beta1\\lib/net45/Newtonsoft.Json.dll"
+      ]
+    },
+    {
+      "Package": {
+        "Id": "JSON",
+        "Version": "1.0.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\jairo\\.nuget\\packages\\json/1.0.1\\lib/net40/Json.dll"
+      ]
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.AspNetCore.Mvc.Formatters.Json",
+        "Version": "2.2.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\jairo\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions/2.2.0\\lib/netstandard2.0/Microsoft.AspNetCore.Authentication.Abstractions.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\microsoft.aspnetcore.authentication.core/2.2.0\\lib/netstandard2.0/Microsoft.AspNetCore.Authentication.Core.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\microsoft.aspnetcore.authorization/2.2.0\\lib/netstandard2.0/Microsoft.AspNetCore.Authorization.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\microsoft.aspnetcore.authorization.policy/2.2.0\\lib/netstandard2.0/Microsoft.AspNetCore.Authorization.Policy.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\microsoft.aspnetcore.hosting.abstractions/2.2.0\\lib/netstandard2.0/Microsoft.AspNetCore.Hosting.Abstractions.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\microsoft.aspnetcore.hosting.server.abstractions/2.2.0\\lib/netstandard2.0/Microsoft.AspNetCore.Hosting.Server.Abstractions.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\microsoft.aspnetcore.http/2.2.0\\lib/netstandard2.0/Microsoft.AspNetCore.Http.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions/2.2.0\\lib/netstandard2.0/Microsoft.AspNetCore.Http.Abstractions.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\microsoft.aspnetcore.http.extensions/2.2.0\\lib/netstandard2.0/Microsoft.AspNetCore.Http.Extensions.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\microsoft.aspnetcore.http.features/2.2.0\\lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch/2.2.0\\lib/netstandard2.0/Microsoft.AspNetCore.JsonPatch.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\microsoft.aspnetcore.mvc.abstractions/2.2.0\\lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Abstractions.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\microsoft.aspnetcore.mvc.core/2.2.0\\lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Core.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\microsoft.aspnetcore.mvc.formatters.json/2.2.0\\lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Formatters.Json.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\microsoft.aspnetcore.responsecaching.abstractions/2.2.0\\lib/netstandard2.0/Microsoft.AspNetCore.ResponseCaching.Abstractions.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\microsoft.aspnetcore.routing/2.2.0\\lib/netstandard2.0/Microsoft.AspNetCore.Routing.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\microsoft.aspnetcore.routing.abstractions/2.2.0\\lib/netstandard2.0/Microsoft.AspNetCore.Routing.Abstractions.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\microsoft.aspnetcore.webutilities/2.2.0\\lib/netstandard2.0/Microsoft.AspNetCore.WebUtilities.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\microsoft.dotnet.platformabstractions/2.1.0\\lib/net45/Microsoft.DotNet.PlatformAbstractions.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\microsoft.extensions.configuration.abstractions/2.2.0\\lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\microsoft.extensions.dependencyinjection/2.2.0\\lib/net461/Microsoft.Extensions.DependencyInjection.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions/2.2.0\\lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\microsoft.extensions.dependencymodel/2.1.0\\lib/net451/Microsoft.Extensions.DependencyModel.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions/2.2.0\\lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\microsoft.extensions.hosting.abstractions/2.2.0\\lib/netstandard2.0/Microsoft.Extensions.Hosting.Abstractions.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\microsoft.extensions.logging.abstractions/2.2.0\\lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\microsoft.extensions.objectpool/2.2.0\\lib/netstandard2.0/Microsoft.Extensions.ObjectPool.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\microsoft.extensions.options/2.2.0\\lib/netstandard2.0/Microsoft.Extensions.Options.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\microsoft.extensions.primitives/2.2.0\\lib/netstandard2.0/Microsoft.Extensions.Primitives.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\microsoft.net.http.headers/2.2.0\\lib/netstandard2.0/Microsoft.Net.Http.Headers.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\newtonsoft.json/12.0.3-beta1\\lib/net45/Newtonsoft.Json.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\system.buffers/4.5.0\\lib/netstandard2.0/System.Buffers.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\system.componentmodel.annotations/4.5.0\\lib/net461/System.ComponentModel.Annotations.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\system.diagnostics.diagnosticsource/4.5.0\\lib/net46/System.Diagnostics.DiagnosticSource.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\system.memory/4.5.1\\lib/netstandard2.0/System.Memory.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\system.numerics.vectors/4.4.0\\lib/net46/System.Numerics.Vectors.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\system.runtime.compilerservices.unsafe/4.5.1\\lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\system.runtime.interopservices.runtimeinformation/4.0.0\\lib/net45/System.Runtime.InteropServices.RuntimeInformation.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\system.text.encodings.web/4.5.0\\lib/netstandard2.0/System.Text.Encodings.Web.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\system.threading.tasks.extensions/4.5.1\\lib/netstandard2.0/System.Threading.Tasks.Extensions.dll"
+      ]
+    },
+    {
+      "Package": {
+        "Id": "Newtonsoft.Json",
+        "Version": "12.0.3-beta1"
+      },
+      "Assemblies": [
+        "C:\\Users\\jairo\\.nuget\\packages\\newtonsoft.json/12.0.3-beta1\\lib/net45/Newtonsoft.Json.dll"
+      ]
+    },
+    {
+      "Package": {
+        "Id": "System.Runtime.Serialization.Json",
+        "Version": "4.3.0"
+      },
+      "Assemblies": []
+    },
+    {
+      "Package": {
         "Id": "UiPath.Excel.Activities",
         "Version": "2.6.2"
       },
       "Assemblies": [
-        "C:\\Users\\Daniel\\.nuget\\packages\\closedxml/0.87.1\\lib/net40/ClosedXML.dll",
-        "C:\\Users\\Daniel\\.nuget\\packages\\csvhelper/2.13.5\\lib/net40-client/CsvHelper.dll",
-        "C:\\Users\\Daniel\\.nuget\\packages\\documentformat.openxml/2.5.0\\lib/DocumentFormat.OpenXml.dll",
-        "C:\\Users\\Daniel\\.nuget\\packages\\microsoft.visualstudio.ole.interop/7.10.6071\\lib/Microsoft.VisualStudio.OLE.Interop.dll",
-        "C:\\Users\\Daniel\\.nuget\\packages\\npoi/2.4.1\\lib/net45/NPOI.OOXML.dll",
-        "C:\\Users\\Daniel\\.nuget\\packages\\npoi/2.4.1\\lib/net45/NPOI.OpenXml4Net.dll",
-        "C:\\Users\\Daniel\\.nuget\\packages\\npoi/2.4.1\\lib/net45/NPOI.OpenXmlFormats.dll",
-        "C:\\Users\\Daniel\\.nuget\\packages\\npoi/2.4.1\\lib/net45/NPOI.dll",
-        "C:\\Users\\Daniel\\.nuget\\packages\\sharpziplib/1.0.0\\lib/net45/ICSharpCode.SharpZipLib.dll",
-        "C:\\Users\\Daniel\\.nuget\\packages\\uipath.excel.activities/2.6.2\\lib/net461/UiPath.Excel.Activities.Design.dll",
-        "C:\\Users\\Daniel\\.nuget\\packages\\uipath.excel.activities/2.6.2\\lib/net461/UiPath.Excel.Activities.dll",
-        "C:\\Users\\Daniel\\.nuget\\packages\\uipath.excel.activities/2.6.2\\lib/net461/UiPath.Excel.dll"
+        "C:\\Users\\jairo\\.nuget\\packages\\closedxml/0.87.1\\lib/net40/ClosedXML.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\csvhelper/2.13.5\\lib/net40-client/CsvHelper.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\documentformat.openxml/2.5.0\\lib/DocumentFormat.OpenXml.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\microsoft.visualstudio.ole.interop/7.10.6071\\lib/Microsoft.VisualStudio.OLE.Interop.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\npoi/2.4.1\\lib/net45/NPOI.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\npoi/2.4.1\\lib/net45/NPOI.OOXML.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\npoi/2.4.1\\lib/net45/NPOI.OpenXml4Net.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\npoi/2.4.1\\lib/net45/NPOI.OpenXmlFormats.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\sharpziplib/1.0.0\\lib/net45/ICSharpCode.SharpZipLib.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\uipath.excel.activities/2.6.2\\lib/net461/UiPath.Excel.Activities.Design.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\uipath.excel.activities/2.6.2\\lib/net461/UiPath.Excel.Activities.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\uipath.excel.activities/2.6.2\\lib/net461/UiPath.Excel.dll"
       ]
     },
     {
@@ -26,15 +109,15 @@
         "Version": "1.5.1"
       },
       "Assemblies": [
-        "C:\\Users\\Daniel\\.nuget\\packages\\bouncycastle/1.8.1\\lib/BouncyCastle.Crypto.dll",
-        "C:\\Users\\Daniel\\.nuget\\packages\\interop.domino.dll/1.0.0\\lib/Interop.Domino.dll",
-        "C:\\Users\\Daniel\\.nuget\\packages\\microsoft.exchange.webservices/2.2.0\\lib/40/Microsoft.Exchange.WebServices.Auth.dll",
-        "C:\\Users\\Daniel\\.nuget\\packages\\microsoft.exchange.webservices/2.2.0\\lib/40/Microsoft.Exchange.WebServices.dll",
-        "C:\\Users\\Daniel\\.nuget\\packages\\uipath.mail.activities/1.5.1\\lib/net452/MailKit.dll",
-        "C:\\Users\\Daniel\\.nuget\\packages\\uipath.mail.activities/1.5.1\\lib/net452/MimeKit.dll",
-        "C:\\Users\\Daniel\\.nuget\\packages\\uipath.mail.activities/1.5.1\\lib/net452/UiPath.Mail.Activities.Design.dll",
-        "C:\\Users\\Daniel\\.nuget\\packages\\uipath.mail.activities/1.5.1\\lib/net452/UiPath.Mail.Activities.dll",
-        "C:\\Users\\Daniel\\.nuget\\packages\\uipath.mail.activities/1.5.1\\lib/net452/UiPath.Mail.dll"
+        "C:\\Users\\jairo\\.nuget\\packages\\bouncycastle/1.8.1\\lib/BouncyCastle.Crypto.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\interop.domino.dll/1.0.0\\lib/Interop.Domino.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\microsoft.exchange.webservices/2.2.0\\lib/40/Microsoft.Exchange.WebServices.Auth.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\microsoft.exchange.webservices/2.2.0\\lib/40/Microsoft.Exchange.WebServices.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\uipath.mail.activities/1.5.1\\lib/net452/MailKit.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\uipath.mail.activities/1.5.1\\lib/net452/MimeKit.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\uipath.mail.activities/1.5.1\\lib/net452/UiPath.Mail.Activities.Design.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\uipath.mail.activities/1.5.1\\lib/net452/UiPath.Mail.Activities.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\uipath.mail.activities/1.5.1\\lib/net452/UiPath.Mail.dll"
       ]
     },
     {
@@ -43,22 +126,22 @@
         "Version": "19.7.0"
       },
       "Assemblies": [
-        "C:\\Users\\Daniel\\.nuget\\packages\\csvhelper/2.13.5\\lib/net40-client/CsvHelper.dll",
-        "C:\\Users\\Daniel\\.nuget\\packages\\microsoft.aspnet.signalr.client/2.4.0\\lib/net45/Microsoft.AspNet.SignalR.Client.dll",
-        "C:\\Users\\Daniel\\.nuget\\packages\\microsoft.rest.clientruntime/2.3.20\\lib/net461/Microsoft.Rest.ClientRuntime.dll",
-        "C:\\Users\\Daniel\\.nuget\\packages\\newtonsoft.json/11.0.2\\lib/net45/Newtonsoft.Json.dll",
-        "C:\\Users\\Daniel\\.nuget\\packages\\uipath.system.activities/19.7.0\\lib/net461/ActiproSoftware.Docking.Wpf.dll",
-        "C:\\Users\\Daniel\\.nuget\\packages\\uipath.system.activities/19.7.0\\lib/net461/ActiproSoftware.Ribbon.Wpf.dll",
-        "C:\\Users\\Daniel\\.nuget\\packages\\uipath.system.activities/19.7.0\\lib/net461/ActiproSoftware.Shared.Wpf.dll",
-        "C:\\Users\\Daniel\\.nuget\\packages\\uipath.system.activities/19.7.0\\lib/net461/ActiproSoftware.SyntaxEditor.Addons.DotNet.Wpf.dll",
-        "C:\\Users\\Daniel\\.nuget\\packages\\uipath.system.activities/19.7.0\\lib/net461/ActiproSoftware.SyntaxEditor.Wpf.dll",
-        "C:\\Users\\Daniel\\.nuget\\packages\\uipath.system.activities/19.7.0\\lib/net461/ActiproSoftware.Text.Addons.DotNet.Wpf.dll",
-        "C:\\Users\\Daniel\\.nuget\\packages\\uipath.system.activities/19.7.0\\lib/net461/ActiproSoftware.Text.LLParser.Wpf.dll",
-        "C:\\Users\\Daniel\\.nuget\\packages\\uipath.system.activities/19.7.0\\lib/net461/ActiproSoftware.Text.Wpf.dll",
-        "C:\\Users\\Daniel\\.nuget\\packages\\uipath.system.activities/19.7.0\\lib/net461/ActiproSoftware.Wizard.Wpf.dll",
-        "C:\\Users\\Daniel\\.nuget\\packages\\uipath.system.activities/19.7.0\\lib/net461/UiPath.OrchestratorClient.dll",
-        "C:\\Users\\Daniel\\.nuget\\packages\\uipath.system.activities/19.7.0\\lib/net461/UiPath.System.Activities.Design.dll",
-        "C:\\Users\\Daniel\\.nuget\\packages\\uipath.system.activities/19.7.0\\lib/net461/UiPath.System.Activities.dll"
+        "C:\\Users\\jairo\\.nuget\\packages\\csvhelper/2.13.5\\lib/net40-client/CsvHelper.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\microsoft.aspnet.signalr.client/2.4.0\\lib/net45/Microsoft.AspNet.SignalR.Client.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\microsoft.rest.clientruntime/2.3.20\\lib/net461/Microsoft.Rest.ClientRuntime.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\newtonsoft.json/12.0.3-beta1\\lib/net45/Newtonsoft.Json.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\uipath.system.activities/19.7.0\\lib/net461/ActiproSoftware.Docking.Wpf.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\uipath.system.activities/19.7.0\\lib/net461/ActiproSoftware.Ribbon.Wpf.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\uipath.system.activities/19.7.0\\lib/net461/ActiproSoftware.Shared.Wpf.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\uipath.system.activities/19.7.0\\lib/net461/ActiproSoftware.SyntaxEditor.Addons.DotNet.Wpf.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\uipath.system.activities/19.7.0\\lib/net461/ActiproSoftware.SyntaxEditor.Wpf.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\uipath.system.activities/19.7.0\\lib/net461/ActiproSoftware.Text.Addons.DotNet.Wpf.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\uipath.system.activities/19.7.0\\lib/net461/ActiproSoftware.Text.LLParser.Wpf.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\uipath.system.activities/19.7.0\\lib/net461/ActiproSoftware.Text.Wpf.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\uipath.system.activities/19.7.0\\lib/net461/ActiproSoftware.Wizard.Wpf.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\uipath.system.activities/19.7.0\\lib/net461/UiPath.OrchestratorClient.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\uipath.system.activities/19.7.0\\lib/net461/UiPath.System.Activities.Design.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\uipath.system.activities/19.7.0\\lib/net461/UiPath.System.Activities.dll"
       ]
     },
     {
@@ -67,46 +150,83 @@
         "Version": "19.7.0"
       },
       "Assemblies": [
-        "C:\\Users\\Daniel\\.nuget\\packages\\avalonedit/5.0.3\\lib/Net40/ICSharpCode.AvalonEdit.dll",
-        "C:\\Users\\Daniel\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.AvalonDock.Themes.Aero.dll",
-        "C:\\Users\\Daniel\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.AvalonDock.Themes.Metro.dll",
-        "C:\\Users\\Daniel\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.AvalonDock.Themes.VS2010.dll",
-        "C:\\Users\\Daniel\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.AvalonDock.dll",
-        "C:\\Users\\Daniel\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.DataGrid.dll",
-        "C:\\Users\\Daniel\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.Toolkit.dll",
-        "C:\\Users\\Daniel\\.nuget\\packages\\humanizer.core/2.4.2\\lib/netstandard2.0/Humanizer.dll",
-        "C:\\Users\\Daniel\\.nuget\\packages\\uipath/19.7.7128.27029\\lib/UiPath.Interop.dll",
-        "C:\\Users\\Daniel\\.nuget\\packages\\uipath.ocr.contracts/2.0.0\\lib/net45/UiPath.OCR.Contracts.dll",
-        "C:\\Users\\Daniel\\.nuget\\packages\\uipath.uiautomation.activities/19.7.0\\lib/net461/ActiproSoftware.DataGrid.Contrib.Wpf.dll",
-        "C:\\Users\\Daniel\\.nuget\\packages\\uipath.uiautomation.activities/19.7.0\\lib/net461/ActiproSoftware.Docking.Wpf.dll",
-        "C:\\Users\\Daniel\\.nuget\\packages\\uipath.uiautomation.activities/19.7.0\\lib/net461/ActiproSoftware.Editors.Wpf.dll",
-        "C:\\Users\\Daniel\\.nuget\\packages\\uipath.uiautomation.activities/19.7.0\\lib/net461/ActiproSoftware.Ribbon.Wpf.dll",
-        "C:\\Users\\Daniel\\.nuget\\packages\\uipath.uiautomation.activities/19.7.0\\lib/net461/ActiproSoftware.Shared.Wpf.dll",
-        "C:\\Users\\Daniel\\.nuget\\packages\\uipath.uiautomation.activities/19.7.0\\lib/net461/ActiproSoftware.SyntaxEditor.Addons.DotNet.Wpf.dll",
-        "C:\\Users\\Daniel\\.nuget\\packages\\uipath.uiautomation.activities/19.7.0\\lib/net461/ActiproSoftware.SyntaxEditor.Wpf.dll",
-        "C:\\Users\\Daniel\\.nuget\\packages\\uipath.uiautomation.activities/19.7.0\\lib/net461/ActiproSoftware.Text.Addons.DotNet.Wpf.dll",
-        "C:\\Users\\Daniel\\.nuget\\packages\\uipath.uiautomation.activities/19.7.0\\lib/net461/ActiproSoftware.Text.LLParser.Wpf.dll",
-        "C:\\Users\\Daniel\\.nuget\\packages\\uipath.uiautomation.activities/19.7.0\\lib/net461/ActiproSoftware.Text.Wpf.dll",
-        "C:\\Users\\Daniel\\.nuget\\packages\\uipath.uiautomation.activities/19.7.0\\lib/net461/ActiproSoftware.Wizard.Wpf.dll",
-        "C:\\Users\\Daniel\\.nuget\\packages\\uipath.uiautomation.activities/19.7.0\\lib/net461/UiPath.UIAutomation.Activities.Design.dll",
-        "C:\\Users\\Daniel\\.nuget\\packages\\uipath.uiautomation.activities/19.7.0\\lib/net461/UiPath.UiAutomation.Activities.dll",
-        "C:\\Users\\Daniel\\.nuget\\packages\\uipath.uiautomation.activities/19.7.0\\lib/net461/UiPath.Wizards.dll",
-        "C:\\Users\\Daniel\\.nuget\\packages\\uipath.vision/1.6.1\\lib/net452/UiPath.Vision.AbbyyCloud.dll",
-        "C:\\Users\\Daniel\\.nuget\\packages\\uipath.vision/1.6.1\\lib/net452/UiPath.Vision.AbbyyFRE11.dll",
-        "C:\\Users\\Daniel\\.nuget\\packages\\uipath.vision/1.6.1\\lib/net452/UiPath.Vision.AbbyyFRE12.dll",
-        "C:\\Users\\Daniel\\.nuget\\packages\\uipath.vision/1.6.1\\lib/net452/UiPath.Vision.AbbyyFRECommon.dll",
-        "C:\\Users\\Daniel\\.nuget\\packages\\uipath.vision/1.6.1\\lib/net452/UiPath.Vision.AzureComputerVision.dll",
-        "C:\\Users\\Daniel\\.nuget\\packages\\uipath.vision/1.6.1\\lib/net452/UiPath.Vision.Core.dll",
-        "C:\\Users\\Daniel\\.nuget\\packages\\uipath.vision/1.6.1\\lib/net452/UiPath.Vision.GoogleCloud.dll",
-        "C:\\Users\\Daniel\\.nuget\\packages\\uipath.vision/1.6.1\\lib/net452/UiPath.Vision.Microsoft.dll",
-        "C:\\Users\\Daniel\\.nuget\\packages\\uipath.vision/1.6.1\\lib/net452/UiPath.Vision.MicrosoftCloud.dll",
-        "C:\\Users\\Daniel\\.nuget\\packages\\uipath.vision/1.6.1\\lib/net452/UiPath.Vision.Tesseract.dll",
-        "C:\\Users\\Daniel\\.nuget\\packages\\uipath.vision/1.6.1\\lib/net452/UiPath.Vision.dll"
+        "C:\\Users\\jairo\\.nuget\\packages\\avalonedit/5.0.3\\lib/Net40/ICSharpCode.AvalonEdit.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.AvalonDock.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.AvalonDock.Themes.Aero.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.AvalonDock.Themes.Metro.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.AvalonDock.Themes.VS2010.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.DataGrid.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.Toolkit.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\humanizer.core/2.4.2\\lib/netstandard2.0/Humanizer.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\uipath/19.7.7128.27029\\lib/UiPath.Interop.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\uipath.ocr.contracts/2.0.0\\lib/net45/UiPath.OCR.Contracts.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\uipath.uiautomation.activities/19.7.0\\lib/net461/ActiproSoftware.DataGrid.Contrib.Wpf.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\uipath.uiautomation.activities/19.7.0\\lib/net461/ActiproSoftware.Docking.Wpf.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\uipath.uiautomation.activities/19.7.0\\lib/net461/ActiproSoftware.Editors.Wpf.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\uipath.uiautomation.activities/19.7.0\\lib/net461/ActiproSoftware.Ribbon.Wpf.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\uipath.uiautomation.activities/19.7.0\\lib/net461/ActiproSoftware.Shared.Wpf.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\uipath.uiautomation.activities/19.7.0\\lib/net461/ActiproSoftware.SyntaxEditor.Addons.DotNet.Wpf.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\uipath.uiautomation.activities/19.7.0\\lib/net461/ActiproSoftware.SyntaxEditor.Wpf.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\uipath.uiautomation.activities/19.7.0\\lib/net461/ActiproSoftware.Text.Addons.DotNet.Wpf.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\uipath.uiautomation.activities/19.7.0\\lib/net461/ActiproSoftware.Text.LLParser.Wpf.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\uipath.uiautomation.activities/19.7.0\\lib/net461/ActiproSoftware.Text.Wpf.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\uipath.uiautomation.activities/19.7.0\\lib/net461/ActiproSoftware.Wizard.Wpf.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\uipath.uiautomation.activities/19.7.0\\lib/net461/UiPath.UIAutomation.Activities.Design.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\uipath.uiautomation.activities/19.7.0\\lib/net461/UiPath.UiAutomation.Activities.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\uipath.uiautomation.activities/19.7.0\\lib/net461/UiPath.Wizards.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\uipath.vision/1.6.1\\lib/net452/UiPath.Vision.AbbyyCloud.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\uipath.vision/1.6.1\\lib/net452/UiPath.Vision.AbbyyFRE11.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\uipath.vision/1.6.1\\lib/net452/UiPath.Vision.AbbyyFRE12.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\uipath.vision/1.6.1\\lib/net452/UiPath.Vision.AbbyyFRECommon.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\uipath.vision/1.6.1\\lib/net452/UiPath.Vision.AzureComputerVision.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\uipath.vision/1.6.1\\lib/net452/UiPath.Vision.Core.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\uipath.vision/1.6.1\\lib/net452/UiPath.Vision.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\uipath.vision/1.6.1\\lib/net452/UiPath.Vision.GoogleCloud.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\uipath.vision/1.6.1\\lib/net452/UiPath.Vision.Microsoft.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\uipath.vision/1.6.1\\lib/net452/UiPath.Vision.MicrosoftCloud.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\uipath.vision/1.6.1\\lib/net452/UiPath.Vision.Tesseract.dll"
+      ]
+    },
+    {
+      "Package": {
+        "Id": "UiPath.WebAPI.Activities",
+        "Version": "1.4.3"
+      },
+      "Assemblies": [
+        "C:\\Users\\jairo\\.nuget\\packages\\avalonedit/5.0.3\\lib/Net40/ICSharpCode.AvalonEdit.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\newtonsoft.json/12.0.3-beta1\\lib/net45/Newtonsoft.Json.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\restsharp/106.3.1\\lib/net452/RestSharp.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\uipath.webapi.activities/1.4.3\\lib/net452/UiPath.Web.Activities.Design.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\uipath.webapi.activities/1.4.3\\lib/net452/UiPath.Web.Activities.dll",
+        "C:\\Users\\jairo\\.nuget\\packages\\uipath.webapi.activities/1.4.3\\lib/net452/UiPath.Web.dll"
+      ]
+    },
+    {
+      "Package": {
+        "Id": "UiPathTeam.JsonRequestActivities",
+        "Version": "1.0.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\jairo\\.nuget\\packages\\uipathteam.jsonrequestactivities/1.0.0\\lib/JsonRequest.dll"
       ]
     }
   ],
   "Conflicts": [],
   "ResolvedDependencies": {
+    "ActivitiesDataTable": {
+      "Id": "ActivitiesDataTable",
+      "Version": "1.0.0",
+      "Dependencies": [
+        {
+          "Item1": "Newtonsoft.Json",
+          "Item2": "[12.0.1, )"
+        },
+        {
+          "Item1": "System.IO",
+          "Item2": "[4.3.0, )"
+        }
+      ]
+    },
     "AvalonEdit": {
       "Id": "AvalonEdit",
       "Version": "5.0.3",
@@ -152,6 +272,11 @@
       "Version": "1.0.0",
       "Dependencies": []
     },
+    "JSON": {
+      "Id": "JSON",
+      "Version": "1.0.1",
+      "Dependencies": []
+    },
     "Microsoft.AspNet.SignalR.Client": {
       "Id": "Microsoft.AspNet.SignalR.Client",
       "Version": "2.4.0",
@@ -162,10 +287,488 @@
         }
       ]
     },
+    "Microsoft.AspNetCore.Authentication.Abstractions": {
+      "Id": "Microsoft.AspNetCore.Authentication.Abstractions",
+      "Version": "2.2.0",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.AspNetCore.Http.Abstractions",
+          "Item2": "[2.2.0, )"
+        },
+        {
+          "Item1": "Microsoft.Extensions.Logging.Abstractions",
+          "Item2": "[2.2.0, )"
+        },
+        {
+          "Item1": "Microsoft.Extensions.Options",
+          "Item2": "[2.2.0, )"
+        }
+      ]
+    },
+    "Microsoft.AspNetCore.Authentication.Core": {
+      "Id": "Microsoft.AspNetCore.Authentication.Core",
+      "Version": "2.2.0",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.AspNetCore.Authentication.Abstractions",
+          "Item2": "[2.2.0, )"
+        },
+        {
+          "Item1": "Microsoft.AspNetCore.Http.Extensions",
+          "Item2": "[2.2.0, )"
+        },
+        {
+          "Item1": "Microsoft.AspNetCore.Http",
+          "Item2": "[2.2.0, )"
+        }
+      ]
+    },
+    "Microsoft.AspNetCore.Authorization": {
+      "Id": "Microsoft.AspNetCore.Authorization",
+      "Version": "2.2.0",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.Extensions.Logging.Abstractions",
+          "Item2": "[2.2.0, )"
+        },
+        {
+          "Item1": "Microsoft.Extensions.Options",
+          "Item2": "[2.2.0, )"
+        }
+      ]
+    },
+    "Microsoft.AspNetCore.Authorization.Policy": {
+      "Id": "Microsoft.AspNetCore.Authorization.Policy",
+      "Version": "2.2.0",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.AspNetCore.Authorization",
+          "Item2": "[2.2.0, )"
+        },
+        {
+          "Item1": "Microsoft.AspNetCore.Authentication.Abstractions",
+          "Item2": "[2.2.0, )"
+        }
+      ]
+    },
+    "Microsoft.AspNetCore.Hosting.Abstractions": {
+      "Id": "Microsoft.AspNetCore.Hosting.Abstractions",
+      "Version": "2.2.0",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.AspNetCore.Hosting.Server.Abstractions",
+          "Item2": "[2.2.0, )"
+        },
+        {
+          "Item1": "Microsoft.Extensions.Hosting.Abstractions",
+          "Item2": "[2.2.0, )"
+        },
+        {
+          "Item1": "Microsoft.AspNetCore.Http.Abstractions",
+          "Item2": "[2.2.0, )"
+        }
+      ]
+    },
+    "Microsoft.AspNetCore.Hosting.Server.Abstractions": {
+      "Id": "Microsoft.AspNetCore.Hosting.Server.Abstractions",
+      "Version": "2.2.0",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.AspNetCore.Http.Features",
+          "Item2": "[2.2.0, )"
+        },
+        {
+          "Item1": "Microsoft.Extensions.Configuration.Abstractions",
+          "Item2": "[2.2.0, )"
+        }
+      ]
+    },
+    "Microsoft.AspNetCore.Http": {
+      "Id": "Microsoft.AspNetCore.Http",
+      "Version": "2.2.0",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.AspNetCore.Http.Abstractions",
+          "Item2": "[2.2.0, )"
+        },
+        {
+          "Item1": "Microsoft.AspNetCore.WebUtilities",
+          "Item2": "[2.2.0, )"
+        },
+        {
+          "Item1": "Microsoft.Net.Http.Headers",
+          "Item2": "[2.2.0, )"
+        },
+        {
+          "Item1": "Microsoft.Extensions.ObjectPool",
+          "Item2": "[2.2.0, )"
+        },
+        {
+          "Item1": "Microsoft.Extensions.Options",
+          "Item2": "[2.2.0, )"
+        }
+      ]
+    },
+    "Microsoft.AspNetCore.Http.Abstractions": {
+      "Id": "Microsoft.AspNetCore.Http.Abstractions",
+      "Version": "2.2.0",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.AspNetCore.Http.Features",
+          "Item2": "[2.2.0, )"
+        },
+        {
+          "Item1": "System.Text.Encodings.Web",
+          "Item2": "[4.5.0, )"
+        }
+      ]
+    },
+    "Microsoft.AspNetCore.Http.Extensions": {
+      "Id": "Microsoft.AspNetCore.Http.Extensions",
+      "Version": "2.2.0",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.AspNetCore.Http.Abstractions",
+          "Item2": "[2.2.0, )"
+        },
+        {
+          "Item1": "Microsoft.Net.Http.Headers",
+          "Item2": "[2.2.0, )"
+        },
+        {
+          "Item1": "Microsoft.Extensions.FileProviders.Abstractions",
+          "Item2": "[2.2.0, )"
+        },
+        {
+          "Item1": "System.Buffers",
+          "Item2": "[4.5.0, )"
+        }
+      ]
+    },
+    "Microsoft.AspNetCore.Http.Features": {
+      "Id": "Microsoft.AspNetCore.Http.Features",
+      "Version": "2.2.0",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.Extensions.Primitives",
+          "Item2": "[2.2.0, )"
+        }
+      ]
+    },
+    "Microsoft.AspNetCore.JsonPatch": {
+      "Id": "Microsoft.AspNetCore.JsonPatch",
+      "Version": "2.2.0",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.CSharp",
+          "Item2": "[4.5.0, )"
+        },
+        {
+          "Item1": "Newtonsoft.Json",
+          "Item2": "[11.0.2, )"
+        }
+      ]
+    },
+    "Microsoft.AspNetCore.Mvc.Abstractions": {
+      "Id": "Microsoft.AspNetCore.Mvc.Abstractions",
+      "Version": "2.2.0",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.AspNetCore.Routing.Abstractions",
+          "Item2": "[2.2.0, )"
+        },
+        {
+          "Item1": "Microsoft.Net.Http.Headers",
+          "Item2": "[2.2.0, )"
+        }
+      ]
+    },
+    "Microsoft.AspNetCore.Mvc.Core": {
+      "Id": "Microsoft.AspNetCore.Mvc.Core",
+      "Version": "2.2.0",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.AspNetCore.Mvc.Abstractions",
+          "Item2": "[2.2.0, )"
+        },
+        {
+          "Item1": "Microsoft.AspNetCore.Authentication.Core",
+          "Item2": "[2.2.0, )"
+        },
+        {
+          "Item1": "Microsoft.AspNetCore.Authorization.Policy",
+          "Item2": "[2.2.0, )"
+        },
+        {
+          "Item1": "Microsoft.AspNetCore.Hosting.Abstractions",
+          "Item2": "[2.2.0, )"
+        },
+        {
+          "Item1": "Microsoft.AspNetCore.Http",
+          "Item2": "[2.2.0, )"
+        },
+        {
+          "Item1": "Microsoft.AspNetCore.Http.Extensions",
+          "Item2": "[2.2.0, )"
+        },
+        {
+          "Item1": "Microsoft.AspNetCore.ResponseCaching.Abstractions",
+          "Item2": "[2.2.0, )"
+        },
+        {
+          "Item1": "Microsoft.AspNetCore.Routing",
+          "Item2": "[2.2.0, )"
+        },
+        {
+          "Item1": "Microsoft.AspNetCore.Routing.Abstractions",
+          "Item2": "[2.2.0, )"
+        },
+        {
+          "Item1": "Microsoft.Extensions.DependencyInjection",
+          "Item2": "[2.2.0, )"
+        },
+        {
+          "Item1": "Microsoft.Extensions.DependencyModel",
+          "Item2": "[2.1.0, )"
+        },
+        {
+          "Item1": "Microsoft.Extensions.FileProviders.Abstractions",
+          "Item2": "[2.2.0, )"
+        },
+        {
+          "Item1": "Microsoft.Extensions.Logging.Abstractions",
+          "Item2": "[2.2.0, )"
+        },
+        {
+          "Item1": "System.Diagnostics.DiagnosticSource",
+          "Item2": "[4.5.0, )"
+        },
+        {
+          "Item1": "System.Threading.Tasks.Extensions",
+          "Item2": "[4.5.1, )"
+        }
+      ]
+    },
+    "Microsoft.AspNetCore.Mvc.Formatters.Json": {
+      "Id": "Microsoft.AspNetCore.Mvc.Formatters.Json",
+      "Version": "2.2.0",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.AspNetCore.Mvc.Core",
+          "Item2": "[2.2.0, )"
+        },
+        {
+          "Item1": "Microsoft.AspNetCore.JsonPatch",
+          "Item2": "[2.2.0, )"
+        }
+      ]
+    },
+    "Microsoft.AspNetCore.ResponseCaching.Abstractions": {
+      "Id": "Microsoft.AspNetCore.ResponseCaching.Abstractions",
+      "Version": "2.2.0",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.Extensions.Primitives",
+          "Item2": "[2.2.0, )"
+        }
+      ]
+    },
+    "Microsoft.AspNetCore.Routing": {
+      "Id": "Microsoft.AspNetCore.Routing",
+      "Version": "2.2.0",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.AspNetCore.Routing.Abstractions",
+          "Item2": "[2.2.0, )"
+        },
+        {
+          "Item1": "Microsoft.AspNetCore.Http.Extensions",
+          "Item2": "[2.2.0, )"
+        },
+        {
+          "Item1": "Microsoft.Extensions.Logging.Abstractions",
+          "Item2": "[2.2.0, )"
+        },
+        {
+          "Item1": "Microsoft.Extensions.ObjectPool",
+          "Item2": "[2.2.0, )"
+        },
+        {
+          "Item1": "Microsoft.Extensions.Options",
+          "Item2": "[2.2.0, )"
+        }
+      ]
+    },
+    "Microsoft.AspNetCore.Routing.Abstractions": {
+      "Id": "Microsoft.AspNetCore.Routing.Abstractions",
+      "Version": "2.2.0",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.AspNetCore.Http.Abstractions",
+          "Item2": "[2.2.0, )"
+        }
+      ]
+    },
+    "Microsoft.AspNetCore.WebUtilities": {
+      "Id": "Microsoft.AspNetCore.WebUtilities",
+      "Version": "2.2.0",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.Net.Http.Headers",
+          "Item2": "[2.2.0, )"
+        },
+        {
+          "Item1": "System.Text.Encodings.Web",
+          "Item2": "[4.5.0, )"
+        }
+      ]
+    },
+    "Microsoft.CSharp": {
+      "Id": "Microsoft.CSharp",
+      "Version": "4.5.0",
+      "Dependencies": []
+    },
+    "Microsoft.DotNet.PlatformAbstractions": {
+      "Id": "Microsoft.DotNet.PlatformAbstractions",
+      "Version": "2.1.0",
+      "Dependencies": [
+        {
+          "Item1": "System.Runtime.InteropServices.RuntimeInformation",
+          "Item2": "[4.0.0, )"
+        }
+      ]
+    },
     "Microsoft.Exchange.WebServices": {
       "Id": "Microsoft.Exchange.WebServices",
       "Version": "2.2.0",
       "Dependencies": []
+    },
+    "Microsoft.Extensions.Configuration.Abstractions": {
+      "Id": "Microsoft.Extensions.Configuration.Abstractions",
+      "Version": "2.2.0",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.Extensions.Primitives",
+          "Item2": "[2.2.0, )"
+        }
+      ]
+    },
+    "Microsoft.Extensions.DependencyInjection": {
+      "Id": "Microsoft.Extensions.DependencyInjection",
+      "Version": "2.2.0",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.Extensions.DependencyInjection.Abstractions",
+          "Item2": "[2.2.0, )"
+        }
+      ]
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions": {
+      "Id": "Microsoft.Extensions.DependencyInjection.Abstractions",
+      "Version": "2.2.0",
+      "Dependencies": []
+    },
+    "Microsoft.Extensions.DependencyModel": {
+      "Id": "Microsoft.Extensions.DependencyModel",
+      "Version": "2.1.0",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.DotNet.PlatformAbstractions",
+          "Item2": "[2.1.0, )"
+        },
+        {
+          "Item1": "Newtonsoft.Json",
+          "Item2": "[9.0.1, )"
+        }
+      ]
+    },
+    "Microsoft.Extensions.FileProviders.Abstractions": {
+      "Id": "Microsoft.Extensions.FileProviders.Abstractions",
+      "Version": "2.2.0",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.Extensions.Primitives",
+          "Item2": "[2.2.0, )"
+        }
+      ]
+    },
+    "Microsoft.Extensions.Hosting.Abstractions": {
+      "Id": "Microsoft.Extensions.Hosting.Abstractions",
+      "Version": "2.2.0",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.Extensions.Configuration.Abstractions",
+          "Item2": "[2.2.0, )"
+        },
+        {
+          "Item1": "Microsoft.Extensions.DependencyInjection.Abstractions",
+          "Item2": "[2.2.0, )"
+        },
+        {
+          "Item1": "Microsoft.Extensions.FileProviders.Abstractions",
+          "Item2": "[2.2.0, )"
+        },
+        {
+          "Item1": "Microsoft.Extensions.Logging.Abstractions",
+          "Item2": "[2.2.0, )"
+        }
+      ]
+    },
+    "Microsoft.Extensions.Logging.Abstractions": {
+      "Id": "Microsoft.Extensions.Logging.Abstractions",
+      "Version": "2.2.0",
+      "Dependencies": []
+    },
+    "Microsoft.Extensions.ObjectPool": {
+      "Id": "Microsoft.Extensions.ObjectPool",
+      "Version": "2.2.0",
+      "Dependencies": []
+    },
+    "Microsoft.Extensions.Options": {
+      "Id": "Microsoft.Extensions.Options",
+      "Version": "2.2.0",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.Extensions.DependencyInjection.Abstractions",
+          "Item2": "[2.2.0, )"
+        },
+        {
+          "Item1": "Microsoft.Extensions.Primitives",
+          "Item2": "[2.2.0, )"
+        },
+        {
+          "Item1": "System.ComponentModel.Annotations",
+          "Item2": "[4.5.0, )"
+        }
+      ]
+    },
+    "Microsoft.Extensions.Primitives": {
+      "Id": "Microsoft.Extensions.Primitives",
+      "Version": "2.2.0",
+      "Dependencies": [
+        {
+          "Item1": "System.Memory",
+          "Item2": "[4.5.1, )"
+        },
+        {
+          "Item1": "System.Runtime.CompilerServices.Unsafe",
+          "Item2": "[4.5.1, )"
+        }
+      ]
+    },
+    "Microsoft.Net.Http.Headers": {
+      "Id": "Microsoft.Net.Http.Headers",
+      "Version": "2.2.0",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.Extensions.Primitives",
+          "Item2": "[2.2.0, )"
+        },
+        {
+          "Item1": "System.Buffers",
+          "Item2": "[4.5.0, )"
+        }
+      ]
     },
     "Microsoft.Rest.ClientRuntime": {
       "Id": "Microsoft.Rest.ClientRuntime",
@@ -184,7 +787,7 @@
     },
     "Newtonsoft.Json": {
       "Id": "Newtonsoft.Json",
-      "Version": "11.0.2",
+      "Version": "12.0.3-beta1",
       "Dependencies": []
     },
     "NPOI": {
@@ -197,10 +800,88 @@
         }
       ]
     },
+    "RestSharp": {
+      "Id": "RestSharp",
+      "Version": "106.3.1",
+      "Dependencies": []
+    },
     "SharpZipLib": {
       "Id": "SharpZipLib",
       "Version": "1.0.0",
       "Dependencies": []
+    },
+    "System.Buffers": {
+      "Id": "System.Buffers",
+      "Version": "4.5.0",
+      "Dependencies": []
+    },
+    "System.ComponentModel.Annotations": {
+      "Id": "System.ComponentModel.Annotations",
+      "Version": "4.5.0",
+      "Dependencies": []
+    },
+    "System.Diagnostics.DiagnosticSource": {
+      "Id": "System.Diagnostics.DiagnosticSource",
+      "Version": "4.5.0",
+      "Dependencies": []
+    },
+    "System.IO": {
+      "Id": "System.IO",
+      "Version": "4.3.0",
+      "Dependencies": []
+    },
+    "System.Memory": {
+      "Id": "System.Memory",
+      "Version": "4.5.1",
+      "Dependencies": [
+        {
+          "Item1": "System.Buffers",
+          "Item2": "[4.4.0, )"
+        },
+        {
+          "Item1": "System.Numerics.Vectors",
+          "Item2": "[4.4.0, )"
+        },
+        {
+          "Item1": "System.Runtime.CompilerServices.Unsafe",
+          "Item2": "[4.5.0, )"
+        }
+      ]
+    },
+    "System.Numerics.Vectors": {
+      "Id": "System.Numerics.Vectors",
+      "Version": "4.4.0",
+      "Dependencies": []
+    },
+    "System.Runtime.CompilerServices.Unsafe": {
+      "Id": "System.Runtime.CompilerServices.Unsafe",
+      "Version": "4.5.1",
+      "Dependencies": []
+    },
+    "System.Runtime.InteropServices.RuntimeInformation": {
+      "Id": "System.Runtime.InteropServices.RuntimeInformation",
+      "Version": "4.0.0",
+      "Dependencies": []
+    },
+    "System.Runtime.Serialization.Json": {
+      "Id": "System.Runtime.Serialization.Json",
+      "Version": "4.3.0",
+      "Dependencies": []
+    },
+    "System.Text.Encodings.Web": {
+      "Id": "System.Text.Encodings.Web",
+      "Version": "4.5.0",
+      "Dependencies": []
+    },
+    "System.Threading.Tasks.Extensions": {
+      "Id": "System.Threading.Tasks.Extensions",
+      "Version": "4.5.1",
+      "Dependencies": [
+        {
+          "Item1": "System.Runtime.CompilerServices.Unsafe",
+          "Item2": "[4.5.0, )"
+        }
+      ]
     },
     "UiPath": {
       "Id": "UiPath",
@@ -315,6 +996,29 @@
     "UiPath.Vision": {
       "Id": "UiPath.Vision",
       "Version": "1.6.1",
+      "Dependencies": []
+    },
+    "UiPath.WebAPI.Activities": {
+      "Id": "UiPath.WebAPI.Activities",
+      "Version": "1.4.3",
+      "Dependencies": [
+        {
+          "Item1": "AvalonEdit",
+          "Item2": "[5.0.3, )"
+        },
+        {
+          "Item1": "Newtonsoft.Json",
+          "Item2": "[11.0.2, )"
+        },
+        {
+          "Item1": "RestSharp",
+          "Item2": "[106.3.1, )"
+        }
+      ]
+    },
+    "UiPathTeam.JsonRequestActivities": {
+      "Id": "UiPathTeam.JsonRequestActivities",
+      "Version": "1.0.0",
       "Dependencies": []
     }
   }

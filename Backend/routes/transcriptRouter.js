@@ -26,9 +26,7 @@ app.post('/transcripcion', function (req, res) {
     transcripcion = new Transcripcion(body.id,body.texto)
     infoLlamada = new InformacionLlamada();
     infoLlamada.setTranscripcion(transcripcion);
-    console.log("bandera1")
     robot = new ControladorRobot(1);
-    console.log("bandera2")
     robot.enviarAlRobot(infoLlamada);
   }
     res.send(respuesta);

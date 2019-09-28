@@ -18,7 +18,6 @@ class ControladorRobot{
             transcripcion: texto.getTranscripcion().getTexto(),
             estado: false
         }
-        console.log(this.url)
         this.FileManager.escribirArchivo(this.url,json);
     }
     
