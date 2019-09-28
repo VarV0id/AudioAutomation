@@ -1,8 +1,8 @@
 module.exports = function(app) {
   const Transcripcion = require('../modelo/Transcripcion.js');
   const InformacionLlamada = require('../modelo/InformacionLlamada.js');
-  const controladorRobot = require ('../RobotRPA/controladorRobot');
-  const controladorficheros = require ('../RobotRPA/controladorFicheros');
+  const ControladorRobot = require ('../RobotRPA/controladorRobot');
+  
 /* GET home page. */
 let respuesta = {
   error: false,
@@ -11,7 +11,6 @@ let respuesta = {
  };
 app.post('/transcripcion', function (req, res) {
   body = req.body
-  console.log(body)
   if(!body.id || !body.texto) {
     respuesta = {
       error: true,
@@ -27,6 +26,10 @@ app.post('/transcripcion', function (req, res) {
     transcripcion = new Transcripcion(body.id,body.texto)
     infoLlamada = new InformacionLlamada();
     infoLlamada.setTranscripcion(transcripcion);
+    console.log("bandera1")
+    robot = new ControladorRobot(1);
+    console.log("bandera2")
+    robot.enviarAlRobot(infoLlamada);
   }
     res.send(respuesta);
 });

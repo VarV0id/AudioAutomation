@@ -1,28 +1,26 @@
-class controladorRobot{
-    constructor(idBot,textoBot,estadoBot){
+const FileManager = require ('./FileManager');
+class ControladorRobot{
+    constructor(idBot){
         this.idBot = idBot;
-        this.textoBot = textoBot;
-        this.estadoBot = estadoBot;
+        this.url = "./RobotRPA/data/automatico.json";
+        this.FileManager = new FileManager();
     }
-    
     setId(idBot){
         this.idBot = idBot;
     }
-    setTexto(textoBot){
-        this.textoBot = textoBot;
-    }
-    setEstado(estadoBot){
-        this.estadoBot = estadoBot;
-    }
-
+   
     getId(idBot){
         return this.idBot;
     }
-    getTexto(textoBot){
-        return this.textoBot;
+    enviarAlRobot(texto){
+        
+        let json = {
+            transcripcion: texto.getTranscripcion().getTexto(),
+            estado: false
+        }
+        console.log(this.url)
+        this.FileManager.escribirArchivo(this.url,json);
     }
-    getEstado(estadoBot){
-        return this.estadoBot
-    }
+    
 }
-module.exports = controladorRobot;
+module.exports = ControladorRobot;
