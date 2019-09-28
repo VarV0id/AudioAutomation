@@ -1071,15 +1071,15 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jairo\\.nuget\\packages\\": {}
+    "C:\\Users\\Daniel\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
       "projectUniqueName": "RobotTranscripcion",
       "projectName": "RobotTranscripcion",
-      "projectPath": "C:\\Users\\jairo\\Desktop\\SistemaUIpath demo\\UiPath\\RobotTranscripcion\\.local",
-      "packagesPath": "C:\\Users\\jairo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jairo\\Desktop\\SistemaUIpath demo\\UiPath\\RobotTranscripcion\\.local"
+      "projectPath": "C:\\Users\\Daniel\\Documents\\Arquitectura\\AudioAutomation\\UiPath\\RobotTranscripcion\\.local",
+      "packagesPath": "C:\\Users\\Daniel\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Daniel\\Documents\\Arquitectura\\AudioAutomation\\UiPath\\RobotTranscripcion\\.local"
     },
     "frameworks": {
       "net461": {

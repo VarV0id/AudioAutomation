@@ -1,6 +1,8 @@
 module.exports = function(app) {
   const Transcripcion = require('../modelo/Transcripcion.js');
   const InformacionLlamada = require('../modelo/InformacionLlamada.js');
+  const controladorRobot = require ('../RobotRPA/controladorRobot');
+  const controladorficheros = require ('../RobotRPA/controladorFicheros');
 /* GET home page. */
 let respuesta = {
   error: false,
@@ -9,6 +11,7 @@ let respuesta = {
  };
 app.post('/transcripcion', function (req, res) {
   body = req.body
+  console.log(body)
   if(!body.id || !body.texto) {
     respuesta = {
       error: true,

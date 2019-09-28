@@ -3,6 +3,7 @@ var express = require('express');
 var cors = require('cors');
 const bodyParser = require('body-parser');
 var transcriptRouter = require('./routes/transcriptRouter');
+var logger = require('morgan');
 
 //Inicializa el framework
 var app = express();
@@ -10,6 +11,7 @@ var app = express();
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
+app.use(logger('dev'));
 //Se crea la ruta para consumir el sesrvicio rest de trasncripcion.
 transcriptRouter(app)
 //Se escucha por el puerto 3000

@@ -1,5 +1,5 @@
 class Transcripcion {
-    constructor(idInfoLlamada, texto) {
+    constructor(id, texto) {
       this.idInfoLlamada = id;
       this.texto =  texto;
     }
@@ -7,7 +7,7 @@ class Transcripcion {
         this.idInfoLlamada = idInfoLlamada;
     }
     setTexto(texto){
-        this.texto = texto
+        this.texto = texto;
     }
     getIdInfoLlamada(){
         return this.idInfoLlamada;

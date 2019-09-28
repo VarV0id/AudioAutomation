@@ -1,2 +1,4 @@
 
 node_modules/
+/Backend/nbproject/private/
+/FrontEnd/nbproject/private/
