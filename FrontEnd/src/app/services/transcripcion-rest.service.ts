@@ -19,7 +19,7 @@ export class TranscripcionRestService {
     //Establecemos cabeceras
     let headers = new HttpHeaders().set('Content-Type', 'application/x-www-form-urlencoded');
 
-    this.http.post(this.url, { headers, id: infoLlamada.getTranscripcion().id, texto: infoLlamada.getTranscripcion().getTexto() })
+    this.http.post(this.url, { headers, cedula: infoLlamada.getCedula(), texto: infoLlamada.getTranscripcion().getTexto() })
       .subscribe(
         data => {
           console.log("POST Request is successful ", data);

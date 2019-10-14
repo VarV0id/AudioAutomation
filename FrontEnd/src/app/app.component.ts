@@ -19,6 +19,7 @@ export class AppComponent {
   ngOnInit() {
     this.contacto = this.formBuilder.group({
       transcripcion: ['', Validators.required],
+      cedula: ['', Validators.required]
     });
   }
 
@@ -26,8 +27,9 @@ export class AppComponent {
 
   onSubmit() {
     
-    let transcripcion: Transcripcion = new Transcripcion(1, this.contacto.value.transcripcion);
-    let infoLlamada: InformacionLlamada = new InformacionLlamada(1);
+    let transcripcion: Transcripcion = new Transcripcion(this.contacto.value.transcripcion);
+    let infoLlamada: InformacionLlamada = new InformacionLlamada();
+    infoLlamada.setCedula(this.contacto.value.cedula);
     infoLlamada.setTranscripcion(transcripcion);
     let result = this.transcriptServ.sendTranscripcion(infoLlamada);
     console.log(result);

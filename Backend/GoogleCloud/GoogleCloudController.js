@@ -1,12 +1,17 @@
 
 
-module.exports = async function speechToText(file) {
+module.exports = async function speechToText() {
         const speech = require('@google-cloud/speech');
         // Creates a client
         const client = new speech.SpeechClient();
+        console.log("Hola")
+        const fs = require('fs');   
+        const fileName = './output.wav';
+
+        // Reads a local audio file and converts it to base64
+        const file = fs.readFileSync(fileName);
+        const audioBytes = file.toString('base64');
         
-        const audioBytes = file
-    
         // The audio file's encoding, sample rate in hertz, and BCP-47 language code
         const audio = {
         content: audioBytes,
@@ -14,7 +19,7 @@ module.exports = async function speechToText(file) {
         const config = {
         encoding: 'LINEAR16',
         sampleRateHertz: 16000,
-        languageCode: 'en-US',
+        languageCode: 'es-ES',
         };
         const request = {
         audio: audio,
@@ -26,5 +31,5 @@ module.exports = async function speechToText(file) {
         const transcription = response.results
         .map(result => result.alternatives[0].transcript)
         .join('\n');
-        console.log(`Transcription: ${transcription}`);
+        console.log(`Transcription:`,transcription);
 }

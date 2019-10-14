@@ -9,6 +9,12 @@
 
         <form [formGroup]="contacto" (ngSubmit)="onSubmit()">
           <div class="form-group">
+              <label>Cedula del cliente</label>
+              <input formControlName="cedula" 
+              [ngClass]="{ 'is-invalid': submitted && f.cedula.errors }" class="form-control form-control-lg" type="text" >
+              <div *ngIf="submitted && f.transcripcion.errors" class="invalid-feedback">
+                  <div *ngIf="f.cedula.errors.required">Por favor escribe la cedula del cliente</div>
+              </div>
             <label>Transcripcion</label>
             <textarea formControlName="transcripcion" class="form-control"
             [ngClass]="{ 'is-invalid': submitted && f.transcripcion.errors }"  class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>

@@ -16,6 +16,7 @@ class ControladorRobot{
         console.log(texto);
         let json = {
             transcripcion: texto.texto,
+            cedula: texto.cedula,
             estado: false
         }
         this.FileManager.escribirArchivo(this.url,json);
