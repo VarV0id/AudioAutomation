@@ -25,11 +25,12 @@ export class AppComponent {
   get f() { return this.contacto.controls; }
 
   onSubmit() {
-    this.contacto.reset()
+    
     let transcripcion: Transcripcion = new Transcripcion(1, this.contacto.value.transcripcion);
     let infoLlamada: InformacionLlamada = new InformacionLlamada(1);
     infoLlamada.setTranscripcion(transcripcion);
     let result = this.transcriptServ.sendTranscripcion(infoLlamada);
     console.log(result);
+    this.contacto.reset()
   }
 }
