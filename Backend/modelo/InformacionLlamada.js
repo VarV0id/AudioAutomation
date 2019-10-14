@@ -1,28 +1,10 @@
-class InformacionLlamada {
-    constructor(id) {
-        this.id = id;
-        this.transcripcion = null;
-        this.audio = null;
-    }
-    setId(id){
-        this.id = id;
-    }
-    getId(){
-        return this.id;
-    }
-    setTranscripcion(transcripcion){
-        this.transcripcion = transcripcion;
-    }
-    
-    getTranscripcion(){
-        return this.transcripcion;
-    }
-    setAudio(audio){
-        this.audio = audio;
-    }
-    
-    getAudio(){
-        return this.audio;
-    }
-}
-module.exports = InformacionLlamada;
+var mongoose = require('mongoose');
+var Schema=mongoose.Schema;
+
+var transcripcion=new Schema({
+    idLlamada:{type:Number,required:true},
+    texto:{type:String,required: true},
+    audio:{type:String,required: true},
+    cedula:{type:String,required: true},
+});
+module.exports = mongoose.model('transcripción',transcripcion);

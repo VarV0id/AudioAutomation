@@ -1,5 +1,4 @@
 module.exports = function(app) {
-  const Transcripcion = require('../modelo/Transcripcion.js');
   const InformacionLlamada = require('../modelo/InformacionLlamada.js');
   const ControladorRobot = require ('../RobotRPA/controladorRobot');
   
@@ -10,25 +9,30 @@ let respuesta = {
   mensaje: ''
  };
 app.post('/transcripcion', function (req, res) {
-  body = req.body
-  if(!body.id || !body.texto) {
-    respuesta = {
-      error: true,
-      codigo: 502,
-      mensaje: 'El campo id y texto son requeridos'
-     };
+  var infoLlamada=new InformacionLlamada(req.body);
+  if(!req.body.idLlamada || !req.body.texto) {
+    respuesta.error=true;
+    respuesta.codigo=502;
+    respuesta.mensaje="Ocurrio un error";
   } else {
-      respuesta = {
-       error: false,  
-       codigo: 200,
-       mensaje: 'respuesta del usuario'
-      };
-    transcripcion = new Transcripcion(body.id,body.texto)
-    infoLlamada = new InformacionLlamada();
-    infoLlamada.setTranscripcion(transcripcion);
+    respuesta.error= false;
+    respuesta.codigo= 200;
+    respuesta.mensaje="respuesta del usuario";
+    infoLlamada.save();
     robot = new ControladorRobot(1);
     robot.enviarAlRobot(infoLlamada);
   }
-    res.send(respuesta);
+  console.log(respuesta);
+    res.send(JSON.stringify(respuesta));
 });
-}
+app.get('/transcripciones', function(req, res) {
+    InformacionLlamada.find({})
+        .exec(function(err, transcripciones) {
+            if(err) {
+                res.send('err')
+            } else {
+                res.json(transcripciones);
+            }
+        });
+});
+};

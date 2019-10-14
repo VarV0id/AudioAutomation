@@ -13,9 +13,9 @@ class ControladorRobot{
         return this.idBot;
     }
     enviarAlRobot(texto){
-        
+        console.log(texto);
         let json = {
-            transcripcion: texto.getTranscripcion().getTexto(),
+            transcripcion: texto.texto,
             estado: false
         }
         this.FileManager.escribirArchivo(this.url,json);
