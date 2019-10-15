@@ -13,12 +13,12 @@ class ControladorRobot{
         return this.idBot;
     }
     enviarAlRobot(texto){
-        console.log(texto);
+        
         let json = {
-            transcripcion: texto.texto,
-            cedula: texto.cedula,
+            transcripcion: texto.getTranscripcion().getTexto(),
             estado: false
         }
+        console.log(this.url)
         this.FileManager.escribirArchivo(this.url,json);
     }
     

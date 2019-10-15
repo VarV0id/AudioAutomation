@@ -7,3 +7,4 @@ var transcripcion=new Schema({
     cedula:{type:String,required: true},
 });
 module.exports = mongoose.model('transcripción',transcripcion);
+
