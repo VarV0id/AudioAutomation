@@ -13,26 +13,34 @@ import { Transcripcion } from './model/Transcripcion';
 export class AppComponent {
   contacto: FormGroup;
   submitted = false;
-  title = 'Formulario ingreso transcripcion';
+  title = 'Carga del audio';
   constructor(private formBuilder: FormBuilder, private transcriptServ: TranscripcionRestService) { }
 
   ngOnInit() {
     this.contacto = this.formBuilder.group({
       transcripcion: ['', Validators.required],
-      cedula: ['', Validators.required]
     });
+    //Listener para cuándo se cargue un audio...
+    console.log("Iniciando...");
+    let fileInput: any = document.querySelector('input[type="file"]');
+    fileInput.addEventListener('change', function (e) {
+        let reader = new FileReader();
+        reader.onload = function (e) {
+          (<HTMLInputElement>document.getElementById("exampleFormControlTextarea1")).value=initSound(this.result);
+        };
+        reader.readAsArrayBuffer(this.files[0]);
+    }, false);
   }
 
   get f() { return this.contacto.controls; }
 
   onSubmit() {
-    
-    let transcripcion: Transcripcion = new Transcripcion(this.contacto.value.transcripcion);
-    let infoLlamada: InformacionLlamada = new InformacionLlamada();
-    infoLlamada.setCedula(this.contacto.value.cedula);
+    let transcripcion: Transcripcion = new Transcripcion(1);
+    let infoLlamada: InformacionLlamada = new InformacionLlamada(1);
     infoLlamada.setTranscripcion(transcripcion);
+    infoLlamada.setAudio((<HTMLInputElement>document.getElementById("exampleFormControlTextarea1")).value);
+    infoLlamada.setDni((<HTMLInputElement>document.getElementById("dni")).value)
     let result = this.transcriptServ.sendTranscripcion(infoLlamada);
     console.log(result);
-    this.contacto.reset()
   }
 }

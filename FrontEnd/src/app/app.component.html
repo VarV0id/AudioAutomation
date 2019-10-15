@@ -5,19 +5,16 @@
     <div class="row">
 
       <div class="col-md-12 mt-5">
-        <h1>{{ title }} </h1>
+        <h1> {{ title }} </h1>
 
         <form [formGroup]="contacto" (ngSubmit)="onSubmit()">
           <div class="form-group">
-              <label>Cedula del cliente</label>
-              <input formControlName="cedula" 
-              [ngClass]="{ 'is-invalid': submitted && f.cedula.errors }" class="form-control form-control-lg" type="text" >
-              <div *ngIf="submitted && f.transcripcion.errors" class="invalid-feedback">
-                  <div *ngIf="f.cedula.errors.required">Por favor escribe la cedula del cliente</div>
-              </div>
             <label>Transcripcion</label>
+            <input type="file" accept="audio/*">
+            <br>
+            <input type="text" id="dni" placeholder="Número de identificación" required="true">
             <textarea formControlName="transcripcion" class="form-control"
-            [ngClass]="{ 'is-invalid': submitted && f.transcripcion.errors }"  class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            [ngClass]="{ 'is-invalid': submitted && f.transcripcion.errors }"  class="form-control" id="exampleFormControlTextarea1" rows="3" disabled="true" hidden="true"></textarea>
             <div *ngIf="submitted && f.transcripcion.errors" class="invalid-feedback">
               <div *ngIf="f.transcripcion.errors.required">Por favor escribe la transcripcion</div>
             </div>
