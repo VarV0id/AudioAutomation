@@ -1,13 +1,27 @@
 import { Transcripcion } from './Transcripcion';
 
 export class InformacionLlamada {
+    id = "";
     transcripcion = null;
-    cedula = null;
-    constructor() {
-
+    audio = null;
+    dni = "";
+    constructor(id) {
+        this.id = id;
         this.transcripcion = null;
+        this.audio = null;
     }
-
+    setDni(dni){
+        this.dni = dni;
+    }
+    getDni(){
+        return this.dni;
+    }
+    setId(id){
+        this.id = id;
+    }
+    getId(){
+        return this.id;
+    }
     setTranscripcion(transcripcion){
         this.transcripcion = transcripcion;
     }
@@ -15,11 +29,11 @@ export class InformacionLlamada {
     getTranscripcion():Transcripcion{
         return this.transcripcion;
     }
-    setCedula(cedula){
-        this.cedula = cedula;
+    setAudio(audio){
+        this.audio = audio;
     }
     
-    getCedula(){
-        return this.cedula;
+    getAudio(){
+        return this.audio;
     }
 }
