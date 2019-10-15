@@ -8,7 +8,7 @@ class FileManager{
         const fs = require('fs');
         fs.readFile(url, function(err, contents) {
             let jsonmod = JSON.parse(contents);
-            jsonmod.push(json);
+            jsonmod.push(json)
             var jsonContent = JSON.stringify(jsonmod);
             fs.writeFile(url, jsonContent, function (err) {
                 if (err) {
@@ -17,7 +17,7 @@ class FileManager{
             });
         });
         
-        console.log("bandera");
+        console.log("bandera") 
         console.log("JSON file has been saved.");
     }
 }
