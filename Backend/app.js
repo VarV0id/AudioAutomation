@@ -4,6 +4,8 @@ var cors = require('cors');
 const bodyParser = require('body-parser');
 var transcriptRouter = require('./routes/transcriptRouter');
 var logger = require('morgan');
+const mongoose = require('mongoose');
+mongoose.connect('mongodb+srv://uipath:uipath@cluster0-7av5w.mongodb.net/Transcripciones?retryWrites=true&w=majority',{useUnifiedTopology:true,useNewUrlParser: true});
 
 //Inicializa el framework
 var app = express();
