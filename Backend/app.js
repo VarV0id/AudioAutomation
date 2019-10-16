@@ -7,11 +7,14 @@ var logger = require('morgan');
 
 //Inicializa el framework
 var app = express();
+app.use(bodyParser.json({limit: '50mb'}));
+app.use(bodyParser.urlencoded({limit: '50mb', extended: true}));
 //Se activa cors
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(logger('dev'));
+
 //Se crea la ruta para consumir el sesrvicio rest de trasncripcion.
 transcriptRouter(app)
 //Se escucha por el puerto 3000
