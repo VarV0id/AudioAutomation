@@ -43,5 +43,7 @@ export class AppComponent {
     infoLlamada.setAudio((<HTMLInputElement>document.getElementById("base64")).value);
     let result = this.transcriptServ.sendTranscripcion(infoLlamada);
     console.log(result);
+    this.contacto.reset();
+    (<HTMLInputElement>document.getElementById("base64")).value  = "";
   }
 }
