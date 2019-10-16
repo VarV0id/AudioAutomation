@@ -1,0 +1,200 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="957,2732" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>Newtonsoft.Json.Linq</x:String>
+      <x:String>Newtonsoft.Json</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>Newtonsoft.Json</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="917,2612" sap2010:WorkflowViewState.IdRef="Sequence_4">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="text" />
+      <Variable x:TypeArguments="njl:JArray" Name="json" />
+      <Variable x:TypeArguments="x:String" Name="file" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" Buttons="Ok" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="879,59" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[&quot;Ingresa el archivo del robot&quot;]" TopMost="True" />
+    <ui:SelectFile DisplayName="Select File" Filter="All files (*.*)|*.*" sap:VirtualizedContainerService.HintSize="879,22" sap2010:WorkflowViewState.IdRef="SelectFile_1" SelectedFile="[file]" />
+    <ui:OpenBrowser Hidden="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="[BrowserType.Chrome]" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="879,2359" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" NewSession="True" Url="https://forms.gle/QEdhSHnMNa1GbHbP9">
+      <ui:OpenBrowser.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+          </ActivityAction.Argument>
+          <While sap:VirtualizedContainerService.HintSize="849,2260" sap2010:WorkflowViewState.IdRef="While_1" Condition="True">
+            <Sequence sap:VirtualizedContainerService.HintSize="807,2103" sap2010:WorkflowViewState.IdRef="Sequence_13">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <Sequence sap:VirtualizedContainerService.HintSize="769,2011" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <Sequence sap:VirtualizedContainerService.HintSize="731,1857" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Sequence sap:VirtualizedContainerService.HintSize="693,1765" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:ReadTextFile Content="[text]" DisplayName="Read Text File" FileName="[file]" sap:VirtualizedContainerService.HintSize="655,59" sap2010:WorkflowViewState.IdRef="ReadTextFile_2" />
+                    <ui:DeserializeJsonArray DisplayName="Deserialize JSON Array" sap:VirtualizedContainerService.HintSize="655,59" sap2010:WorkflowViewState.IdRef="DeserializeJsonArray_1" JsonArray="[json]" JsonString="[text]" />
+                    <Sequence sap:VirtualizedContainerService.HintSize="655,1348" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:ForEach x:TypeArguments="njl:JToken" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="617,1256" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[json]">
+                        <ui:ForEach.Body>
+                          <ActivityAction x:TypeArguments="njl:JToken">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="njl:JToken" Name="item" />
+                            </ActivityAction.Argument>
+                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="585,1123" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <If Condition="[item(&quot;estado&quot;).ToString = &quot;False&quot;]" sap:VirtualizedContainerService.HintSize="547,1031" sap2010:WorkflowViewState.IdRef="If_1">
+                                <If.Then>
+                                  <Sequence sap:VirtualizedContainerService.HintSize="406,884" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="368,692" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT'" EmptyField="False" sap:VirtualizedContainerService.HintSize="330,134" sap2010:WorkflowViewState.IdRef="TypeInto_3" SendWindowMessages="False" SimulateType="True" Text="[item(&quot;cedula&quot;).ToString]">
+                                        <ui:TypeInto.Target>
+                                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="18687a1235b537dc23fdca5d30d3c150" Selector="&lt;html app='chrome.exe' title='Formulario Arquitectura' /&gt;&lt;webctrl name='entry.268684090' tag='INPUT' /&gt;" WaitForReady="COMPLETE">
+                                            <ui:Target.TimeoutMS>
+                                              <InArgument x:TypeArguments="x:Int32" />
+                                            </ui:Target.TimeoutMS>
+                                          </ui:Target>
+                                        </ui:TypeInto.Target>
+                                      </ui:TypeInto>
+                                      <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type Into 'TEXTAREA'" EmptyField="False" sap:VirtualizedContainerService.HintSize="330,134" sap2010:WorkflowViewState.IdRef="TypeInto_4" SendWindowMessages="False" SimulateType="True" Text="[item(&quot;transcripcion&quot;).ToString]">
+                                        <ui:TypeInto.Target>
+                                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="ebd1f76baa4d69b4ddb2417aec5e6813" Selector="&lt;html app='chrome.exe' title='Formulario Arquitectura' /&gt;&lt;webctrl tag='TEXTAREA' /&gt;" WaitForReady="COMPLETE">
+                                            <ui:Target.TimeoutMS>
+                                              <InArgument x:TypeArguments="x:Int32" />
+                                            </ui:Target.TimeoutMS>
+                                          </ui:Target>
+                                        </ui:TypeInto.Target>
+                                      </ui:TypeInto>
+                                      <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'DIV'" sap:VirtualizedContainerService.HintSize="330,106" sap2010:WorkflowViewState.IdRef="Click_5" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="True">
+                                        <ui:Click.CursorPosition>
+                                          <ui:CursorPosition OffsetX="21" OffsetY="6" Position="TopLeft" />
+                                        </ui:Click.CursorPosition>
+                                        <ui:Click.Target>
+                                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="37e37d3c3774c074f730767927a760b8" Selector="&lt;html app='chrome.exe' title='Formulario Arquitectura' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='2' isleaf='1' parentid='mG61Hd' tag='DIV' /&gt;" WaitForReady="COMPLETE">
+                                            <ui:Target.TimeoutMS>
+                                              <InArgument x:TypeArguments="x:Int32" />
+                                            </ui:Target.TimeoutMS>
+                                          </ui:Target>
+                                        </ui:Click.Target>
+                                      </ui:Click>
+                                      <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A '" sap:VirtualizedContainerService.HintSize="330,106" sap2010:WorkflowViewState.IdRef="Click_6" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="True">
+                                        <ui:Click.CursorPosition>
+                                          <ui:CursorPosition OffsetX="60" OffsetY="7" Position="TopLeft" />
+                                        </ui:Click.CursorPosition>
+                                        <ui:Click.Target>
+                                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="d45d60cc072402fe63b1bd33c24cc96c" Selector="&lt;html app='chrome.exe' title='Formulario Arquitectura' /&gt;&lt;webctrl aaname='Enviar otra respuesta' tag='A' /&gt;" WaitForReady="COMPLETE">
+                                            <ui:Target.TimeoutMS>
+                                              <InArgument x:TypeArguments="x:Int32" />
+                                            </ui:Target.TimeoutMS>
+                                          </ui:Target>
+                                        </ui:Click.Target>
+                                      </ui:Click>
+                                    </Sequence>
+                                    <Assign sap:VirtualizedContainerService.HintSize="368,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+                                      <Assign.To>
+                                        <OutArgument x:TypeArguments="njl:JToken">[item("estado")]</OutArgument>
+                                      </Assign.To>
+                                      <Assign.Value>
+                                        <InArgument x:TypeArguments="njl:JToken">["True"]</InArgument>
+                                      </Assign.Value>
+                                    </Assign>
+                                  </Sequence>
+                                </If.Then>
+                              </If>
+                            </Sequence>
+                          </ActivityAction>
+                        </ui:ForEach.Body>
+                      </ui:ForEach>
+                    </Sequence>
+                    <ui:WriteTextFile DisplayName="Write Text File" FileName="C:\Users\Karol\Documents\Arqui Software\Original Audio-Automation\AudioAutomation-master\Backend\RobotRPA\data\automatico.json" sap:VirtualizedContainerService.HintSize="655,87" sap2010:WorkflowViewState.IdRef="WriteTextFile_1" Text="[json.ToString]" />
+                  </Sequence>
+                </Sequence>
+                <Delay Duration="00:00:30" sap:VirtualizedContainerService.HintSize="731,22" sap2010:WorkflowViewState.IdRef="Delay_1" />
+              </Sequence>
+            </Sequence>
+          </While>
+        </ActivityAction>
+      </ui:OpenBrowser.Body>
+    </ui:OpenBrowser>
+  </Sequence>
+</Activity>
