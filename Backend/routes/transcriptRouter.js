@@ -1,8 +1,6 @@
 audio = null
 module.exports = function(app) {
-  const Transcripcion = require('../modelo/Transcripcion.js');
-
-
+  const InformacionLlamada = require('../modelo/InformacionLlamada.js');
   
 /* GET home page. */
 let respuesta = {
@@ -31,7 +29,17 @@ app.post('/transcripcion', function (req, res) {
   }
     res.send(respuesta);
 });
-}
+app.get('/transcripciones', function(req, res) {
+  InformacionLlamada.find({},{audio:0})
+      .exec(function(err, transcripciones) {
+          if(err) {
+              res.send('err')
+          } else {
+              res.json(transcripciones);
+          }
+      });
+});
+};
 async function main() {
   const InformacionLlamada = require('../modelo/InformacionLlamada.js');
   const ControladorRobot = require ('../RobotRPA/controladorRobot');
