@@ -2,3 +2,4 @@
 node_modules/
 /Backend/nbproject/private/
 /FrontEnd/nbproject/private/
+Backend/GoogleCloud/credential.json

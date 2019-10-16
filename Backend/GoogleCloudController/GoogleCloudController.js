@@ -1,4 +1,4 @@
-module.exports = async function main(audio) {
+module.exports = async function main() {
     // Imports the Google Cloud client library
     const speech = require('@google-cloud/speech');
   

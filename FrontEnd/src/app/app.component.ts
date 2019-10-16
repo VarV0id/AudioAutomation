@@ -3,7 +3,6 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { TranscripcionRestService } from './services/transcripcion-rest.service';
 import { InformacionLlamada } from './model/InformacionLlamada';
 import { Transcripcion } from './model/Transcripcion';
-import * as moment from 'moment';
 
 @Component({
   selector: 'app-root',
