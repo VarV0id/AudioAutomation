@@ -12,10 +12,11 @@ class ControladorRobot{
     getId(idBot){
         return this.idBot;
     }
-    enviarAlRobot(texto){
+    enviarAlRobot(texto, cedula){
         
         let json = {
-            transcripcion: texto.getTranscripcion().getTexto(),
+            transcripcion: texto,
+            cedula: cedula,
             estado: false
         }
         console.log(this.url)

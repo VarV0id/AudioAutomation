@@ -1,7 +1,7 @@
 import { Transcripcion } from './Transcripcion';
 
 export class InformacionLlamada {
-    id = "";
+    id = ""
     transcripcion = null;
     audio = null;
     dni = "";

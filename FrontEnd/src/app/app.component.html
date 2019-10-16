@@ -8,17 +8,32 @@
         <h1> {{ title }} </h1>
 
         <form [formGroup]="contacto" (ngSubmit)="onSubmit()">
-          <div class="form-group">
-            <label>Transcripcion</label>
-            <input type="file" accept="audio/*">
-            <br>
-            <input type="text" id="dni" placeholder="Número de identificación" required="true">
-            <textarea formControlName="transcripcion" class="form-control"
-            [ngClass]="{ 'is-invalid': submitted && f.transcripcion.errors }"  class="form-control" id="exampleFormControlTextarea1" rows="3" disabled="true" hidden="true"></textarea>
-            <div *ngIf="submitted && f.transcripcion.errors" class="invalid-feedback">
-              <div *ngIf="f.transcripcion.errors.required">Por favor escribe la transcripcion</div>
-            </div>
-          </div>
+            <div class="form-group">
+                <label for="codigo">Codigo</label>
+                <input formControlName="codigo" class="form-control" type="text" id="dni" placeholder="Codigo de la llamada" required="true">
+                <div *ngIf="submitted && f.transcripcion.errors" class="invalid-feedback">
+                 <div *ngIf="f.transcripcion.errors.required">Por favor escribe la tu cedula</div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="dni">Cedula</label>
+                <input formControlName="transcripcion" class="form-control" type="text" id="dni" placeholder="Número de identificación" required="true">
+                <div *ngIf="submitted && f.transcripcion.errors" class="invalid-feedback">
+                 <div *ngIf="f.transcripcion.errors.required">Por favor escribe la tu cedula</div>
+                </div>
+              </div>
+              <div class="form-group input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
+                  </div>
+                  <div class="custom-file">
+                    <input class="form-control" type="text" id="base64" placeholder= "Base">
+                    <input type="file" formControlName="audio"  class="form-control custom-file-input" id="archivo" aria-describedby="inputGroupFileAddon01" accept="audio/*">
+                    <label class="custom-file-label" for="archivo">Choose file</label>
+                  </div>
+              </div>
+              
+          
 
           <div class="form-group">
             <button [disabled]="loading" class="btn btn-primary">Aceptar</button>
