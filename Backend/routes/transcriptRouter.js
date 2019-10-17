@@ -68,7 +68,6 @@ async function main() {
     .join('\n');
   console.log(`Transcription: ${transcription}`);
   infoLlamada = new InformacionLlamada({id:body.id,cedula:body.cedula, audio:body.audio, texto:transcription});
-  infoLlamada.save()
   robot = new ControladorRobot(1); 
   robot.enviarAlRobot(transcription, body.cedula);  
 }
