@@ -1436,15 +1436,15 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Karol\\.nuget\\packages\\": {}
+    "C:\\Users\\jairo\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
       "projectUniqueName": "RobotTranscription",
       "projectName": "RobotTranscription",
-      "projectPath": "C:\\Users\\Karol\\Documents\\Arqui Software\\Original Audio-Automation\\AudioAutomation-master\\UiPath\\RobotTranscription\\.local",
-      "packagesPath": "C:\\Users\\Karol\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Karol\\Documents\\Arqui Software\\Original Audio-Automation\\AudioAutomation-master\\UiPath\\RobotTranscription\\.local"
+      "projectPath": "D:\\UdeA\\Arquitectura de Software\\RTFs\\RTF1\\AudioAutomation\\UiPath\\RobotTranscription\\.local",
+      "packagesPath": "C:\\Users\\jairo\\.nuget\\packages\\",
+      "outputPath": "D:\\UdeA\\Arquitectura de Software\\RTFs\\RTF1\\AudioAutomation\\UiPath\\RobotTranscription\\.local"
     },
     "frameworks": {
       "net461": {
